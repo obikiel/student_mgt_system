@@ -48,7 +48,7 @@
                                 <input type="text" name="surname" class="form-control" placeholder="enter surname">
                               </div><br>
                               <div class="form-group">
-                                <input type="text" name="age" class="form-control" placeholder="enter Age">
+                                <input type="number" name="age" class="form-control" placeholder="enter Age">
                               </div><br>
                               <div class="form-group">
                                 <input type="text" name="course_of_study" class="form-control" placeholder="enter course of study">
@@ -93,7 +93,7 @@
                           </div>
                           <div class="form-group">
                             <label class="form-label">age</label>
-                            <input value="{{$student->age}}" type="text" name="age" class="form-control" placeholder="enter Age">
+                            <input value="{{$student->age}}" type="number" name="age" class="form-control" placeholder="enter Age">
                           </div>
                           <div class="form-group">
                             <label class="form-label">course of study</label>
@@ -128,7 +128,7 @@
                       </div>
                       <div class="form-group">
                         <label class="form-label">age</label>
-                        <input value="{{$student->age}}" type="text" name="age" class="form-control" placeholder="enter Age">
+                        <input value="{{$student->age}}" type="number" name="age" class="form-control" placeholder="enter Age">
                       </div>
                       <div class="form-group">
                         <label class="form-label">course of study</label>
