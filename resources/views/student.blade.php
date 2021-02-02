@@ -54,7 +54,7 @@
                                 <input type="text" name="course_of_study" class="form-control" placeholder="enter course of study">
                               </div><br>
                               <input type="submit" class="btn btn-info" value="save">
-                              <input type="reset" class="btn btn-warning" value="reset">
+
                           </form>
                       </div>
 
@@ -100,19 +100,19 @@
                             <input value="{{$student->course_of_study}}"type="text" name="course_of_study" class="form-control" placeholder="enter course of study">
                           </div><br>
                           <input type="submit" class="btn btn-info" value="update">
-                          <input type="reset" class="btn btn-warning" value="reset">
+
                       </form>
                 </section>
             </div>
         </div>
-    @elseif($layout=='delete')
+    @elseif($layout=='destroy')
     <div class="container-fluid mt-4">
         <div class="row">
             <section class="col">
                 @include("studentslist")
             </section>
             <section class="col">
-                <form action="{{url('/destroy/'.$student->id)}}" method="destroy">
+                <form action="{{url('/destroy/'.$student->id)}}" method="get">
                     @csrf
                     <div class="form-group">
                       <label class="form-label">cne</label>
@@ -135,7 +135,7 @@
                         <input value="{{$student->course_of_study}}"type="text" name="course_of_study" class="form-control" placeholder="enter course of study">
                       </div><br>
                       <input type="submit" class="btn btn-info" value="new">
-                      <input type="reset" class="btn btn-warning" value="reset">
+
                   </form>
             </section>
         </div>
